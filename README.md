@@ -50,7 +50,7 @@ To run the application: Right click on EBrokerApplication and run it as a spring
 Right now there are two types of tests that are written. 
   => **Unit tests** : 99% code Coverage   
   => **Integration tests** : 98% code Coverage   
-  => Simply use maven install and the test_reports will be generated under **target/site**.   
-    => **jacoco-unit-test-coverage-report** will have the report for unit tests.  
-    => **jacoco-integration-test-coverage-report** will have the report for integartion tests.  
+    => Simply use maven install and the test_reports will be generated under **target/site**.   
+      => **jacoco-unit-test-coverage-report** will have the report for unit tests.  
+      => **jacoco-integration-test-coverage-report** will have the report for integartion tests.  
   

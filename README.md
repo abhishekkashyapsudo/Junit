@@ -9,36 +9,39 @@ To run the application: Right click on EBrokerApplication and run it as a spring
   
   
 #Endpoints
-  => **/equity/available**: List all the avilable equities
-  => **/equity/trader**: Returns the trader details along with the avilable equities for him
-  => **equity/buy?id=4&quantity=10**: Buy the passed quantity of equity with passed id. It returns the updated trader details.
-  => **equity/sell?id=4&quantity=1**: Sells the passed quantity of equity with passed id. It returns the updated trader details.
-  => **equity/addFunds?amount=10000**: Adds the passed amount to trader's funds. It returns the updated trader details.
+
+  => **/equity/available**: List all the avilable equities. 
+  => **/equity/trader**: Returns the trader details along with the avilable equities for him. 
+  => **equity/buy?id=4&quantity=10**: Buy the passed quantity of equity with passed id. It returns the updated trader details.  
+  => **equity/sell?id=4&quantity=1**: Sells the passed quantity of equity with passed id. It returns the updated trader details.  
+  => **equity/addFunds?amount=10000**: Adds the passed amount to trader's funds. It returns the updated trader details.  
+  
   
 #Validations: A user friendly message is retruned in the following cases.
-  => **/equity/available**: 
-    => No validations.
+
+  => **/equity/available**:   
+    => No validations.  
     
-  => **/equity/trader**: 
-    => Returns an error message if trader is not present in the database.
+  => **/equity/trader**:   
+    => Returns an error message if trader is not present in the database.  
+     
+  => **equity/buy?id=4&quantity=10**:   
+    => Time must be between 10-3 on a weekday(Except Saturday and Sunday).  
+    => Trader with id 1 must exist.    
+    => Equity with passed id must exist.  
+    => Quantity should be greater than 0.  
+    => Trader must have sufficient funds.  
     
-  => **equity/buy?id=4&quantity=10**: 
-    => Time must be between 10-3 on a weekday(Except Saturday and Sunday).
-    => Trader with id 1 must exist.
-    => Equity with passed id must exist.
-    => Quantity should be greater than 0.
-    => Trader must have sufficient funds.
-    
-  => **equity/sell?id=4&quantity=1**: 
-    => Time must be between 10-3 on a weekday(Except Saturday and Sunday).
-    => Trader with id 1 must exist.
-    => Equity with passed id must exist.
-    => Quantity should be greater than 0.
-    => Equity should be available with the trader.
-    => Sufficient amount of the equity should be present.
-    
-  => **equity/addFunds?amount=10000**: 
-     => Amount should be greater than 0.
+  => **equity/sell?id=4&quantity=1**:   
+    => Time must be between 10-3 on a weekday(Except Saturday and Sunday).  
+    => Trader with id 1 must exist.  
+    => Equity with passed id must exist.  
+    => Quantity should be greater than 0.  
+    => Equity should be available with the trader.  
+    => Sufficient amount of the equity should be present.  
+     
+  => **equity/addFunds?amount=10000**:   
+     => Amount should be greater than 0.  
 
 # Test Coverage
 Right now there are two types of tests that are written

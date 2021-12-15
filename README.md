@@ -2,10 +2,11 @@
   
 To run the application: Right click on EBrokerApplication and run it as a spring boot application. 
 
-  => Application will be started on port **8082**. 
-  => The application requires a mysql database with username and password as **root** and database name as **ebroker**.
-  => The required tables will be created automatically.
-  => Use **initial_data.sql** under **src/main/resources** to add initial data into database.
+  => Application will be started on port **8082**.  
+  => The application requires a mysql database with username and password as **root** and database name as **ebroker**.  
+  => The required tables will be created automatically.  
+  => Use **initial_data.sql** under **src/main/resources** to add initial data into database.  
+  
   
 #Endpoints
   => **/equity/available**: List all the avilable equities

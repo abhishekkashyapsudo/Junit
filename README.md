@@ -10,11 +10,16 @@ To run the application: Right click on EBrokerApplication and run it as a spring
   
 #Endpoints
 
-  => **/equity/available**: List all the avilable equities. 
-  => **/equity/trader**: Returns the trader details along with the avilable equities for him. 
-  => **equity/buy?id=4&quantity=10**: Buy the passed quantity of equity with passed id. It returns the updated trader details.  
-  => **equity/sell?id=4&quantity=1**: Sells the passed quantity of equity with passed id. It returns the updated trader details.  
-  => **equity/addFunds?amount=10000**: Adds the passed amount to trader's funds. It returns the updated trader details.  
+
+  => **/equity/available**: List all the avilable equities.  
+  
+  => **/equity/trader**: Returns the trader details along with the avilable equities for him.   
+  
+  => **equity/buy?id=4&quantity=10**: Buy the passed quantity of equity with passed id. It returns the updated trader details.   
+  
+  => **equity/sell?id=4&quantity=1**: Sells the passed quantity of equity with passed id. It returns the updated trader details.    
+  
+  => **equity/addFunds?amount=10000**: Adds the passed amount to trader's funds. It returns the updated trader details.    
   
   
 #Validations: A user friendly message is retruned in the following cases.
@@ -44,10 +49,11 @@ To run the application: Right click on EBrokerApplication and run it as a spring
      => Amount should be greater than 0.  
 
 # Test Coverage
-Right now there are two types of tests that are written
-  => **Unit tests** : 99% code Coverage 
-  => **Integration tests** : 98% code Coverage 
-  => Simply use maven install and the test_reports will be generated under **target/site**
-    => **jacoco-unit-test-coverage-report** will have the report for unit tests.
-    => **jacoco-integration-test-coverage-report** will have the report for integartion tests.
+
+Right now there are two types of tests that are written. 
+  => **Unit tests** : 99% code Coverage   
+  => **Integration tests** : 98% code Coverage   
+  => Simply use maven install and the test_reports will be generated under **target/site**. 
+    => **jacoco-unit-test-coverage-report** will have the report for unit tests.  
+    => **jacoco-integration-test-coverage-report** will have the report for integartion tests.  
   

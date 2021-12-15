@@ -12,11 +12,8 @@ To run the application: Right click on EBrokerApplication and run it as a spring
 
 
   => **/equity/available**: List all the avilable equities.  
-  
   => **/equity/trader**: Returns the trader details along with the avilable equities for him.   
-  
   => **equity/buy?id=4&quantity=10**: Buy the passed quantity of equity with passed id. It returns the updated trader details.   
-  
   => **equity/sell?id=4&quantity=1**: Sells the passed quantity of equity with passed id. It returns the updated trader details.    
   
   => **equity/addFunds?amount=10000**: Adds the passed amount to trader's funds. It returns the updated trader details.    

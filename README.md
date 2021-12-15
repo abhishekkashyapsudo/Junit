@@ -1,6 +1,7 @@
 # Junit Repository   
   
-To run the application: Right click on EBrokerApplication and run it as a spring boot application.  
+To run the application: Right click on EBrokerApplication and run it as a spring boot application. 
+
   => Application will be started on port **8082**. 
   => The application requires a mysql database with username and password as **root** and database name as **ebroker**.
   => The required tables will be created automatically.
